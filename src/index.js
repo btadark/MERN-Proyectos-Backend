@@ -7,7 +7,7 @@ const cors = require("cors");
 const app = express();
 
 // puerto de la app
-const PORT = process.env.PORT || 4000;
+const port = process.env.port || 4000;
 
 // conectar a la base de datos
 conectarDB();
@@ -28,6 +28,6 @@ app.use("/api/proyectos", require("./routes/proyectos"));
 app.use("/api/tareas", require("./routes/tareas"));
 
 // arrancar la app
-app.listen(PORT, () => {
-  console.log(`El servidor corriendo en el puerto ${PORT}`);
+app.listen(port, "0.0.0.0", () => {
+  console.log(`Servidor corriendo en el puerto ${PORT}`);
 });
