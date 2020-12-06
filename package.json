@@ -1,0 +1,25 @@
+{
+  "name": "mernproyectosservidor",
+  "version": "1.0.0",
+  "description": "API para MERN PROYECTOS",
+  "main": "index.js",
+  "scripts": {
+    "start": "node src/.",
+    "dev": "nodemon src/."
+  },
+  "author": "John Brandon Ticona Apaza",
+  "license": "ISC",
+  "devDependencies": {
+    "nodemon": "^2.0.6"
+  },
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "cors": "^2.8.5",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "express-validator": "^6.7.0",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^5.11.0",
+    "morgan": "^1.10.0"
+  }
+}
